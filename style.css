@@ -104,6 +104,20 @@ footer.pied {
 }
 footer.pied a { color: var(--doux); }
 
+.studio-signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 8px 0 28px;
+  color: var(--doux);
+  font-size: 14px;
+  text-decoration: none;
+}
+.studio-signature img { height: 44px; width: auto; transition: transform 0.15s; }
+.studio-signature:hover { color: var(--texte); }
+.studio-signature:hover img { transform: scale(1.04); }
+
 @media (max-width: 720px) {
   .heros-grille { grid-template-columns: repeat(2, 1fr); }
   .blocs { grid-template-columns: 1fr; }
